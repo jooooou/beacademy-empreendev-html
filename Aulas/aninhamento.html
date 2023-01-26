@@ -1,0 +1,44 @@
+<!-- 
+Aninhamento
+    * Hierarquia (Pais, filhos e irmãos.)
+    * Fluxo (Leitura de cima para baixo, feita pelo User Agent)
+    * Posicionamento
+        - Inline (Elementos de linha)
+        - Block (Elementos que quebram a linha, criam um espaço próprio)
+
+-->
+
+<!-- Testes -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda saepe ipsam debitis recusandae ducimus quo <em>officia</em> beatae eos, error natus sit eligendi aliquid cum optio unde itaque quaerat quam <strong>numquam? </strong> </p>
+
+<P>Parágrafo 1
+    O espaço não conta, pois é um elemento [Inline]
+</P>
+
+<p>Parágrafo 2
+    <br>
+    Desta vez o espaço conta, pois o [br] é um elemento [block]
+</P>
+
+<h1>Título é [block]</h1> <p>Isto prova.</p>
+
+<!--
+Caracteres Reservados (Entidades)
+    São aqueles que o HTML reservou e não podem ser usados.
+    Apenas com expressões específicas. &
+        &nbsp; (Espaço)
+        &lt; (<)
+        &gt; (>)
+        &quot; (")
+        &apos; (')
+        &amp; (&)
+
+-->
+
+<P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus dolor nulla consequuntur, dolorem quo velit ex aperiam quidem quis vero, similique ducimus beatae? Inventore iusto minus, nesciunt laboriosam ducimus excepturi &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <em>Teste</em> <br>
+&lt;teste&gt;<br>
+&quot;Sic filii scite tibi vi sacramentum&quot; - Laurence.
+<br>True &amp; False.
+</P>
+
+<a href="textos-titulos.html">Próxima aula</a>

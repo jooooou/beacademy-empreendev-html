@@ -1,0 +1,177 @@
+<!-- 
+    Block, elementos de entrada de dados.
+    
+    Atributos:
+        *action
+        *method (get ou post)
+            get funciona na linha do http, busca.
+    
+    Elementos:
+        *fieldset
+            name=""
+            form=""
+            legend=""
+ -->
+
+ <!-- <form id="form-teste" action="" method="post">
+    <fieldset name="contato" form="form-teste"> 
+        <legend>Preencha o formulário de contato</legend>
+    </fieldset> -->
+
+    <!-- 
+        Button
+            Propriedades:
+                *Type=" "
+                    > submit
+                    > reset
+                    >button
+                *name=" "    
+    -->
+    <!-- <button type="submit" name="button-test">
+Enviar
+    </button>
+ </form> -->
+
+ <!-- <form action="" method="post">
+    <fieldset name="contato">
+        <legend>Preencha este formulário de contato</legend>
+    </fieldset> -->
+
+    <!-- 
+        Label
+            *Associar e identificar tags de entrada de dados
+            *Acessibilidade
+            
+            Atributos:
+                * for (fazer conexão com outros elementos de formulários)
+     -->
+
+     <!-- <label for="nome">Nome:</label>
+     <input type="text" id="nome"> -->
+
+     <!-- <label>
+        Idade:
+        <input type="number" id="age">
+    </label> -->
+
+ <!-- 
+    Datalist
+        *Lista de valores com sugestões para elemento input
+        *Seleção de valores, ou inserir novos  valores.
+  -->
+<!-- Lista de professores -->
+  <!-- <datalist id="profList">
+    <option >Luan</option>
+    <option >Jenifer</option>
+    <option >Regis</option>
+  </datalist>
+  
+  <input type="text" list="profList" placeholder="Escolha seu professor"> -->
+
+<!-- </form> -->
+
+<form action="" method="post" enctype="multipart/form-data">
+
+<fieldset>
+    <legend>Trabalho com Inputs</legend>
+
+    
+    <!-- Input Text -->
+
+    <!-- <input type="text" placeholder="Preencha o seu nome" size="60" minlength="8" maxlength="20" title="Preencha o seu nome" required>
+<br> -->
+    <!-- Input Number -->
+
+    <!-- <input type="number" placeholder="Preencha a sua idade" size="50" minlength="6" maxlength="12" title="Preencha a sua idade" required>
+<br> -->
+    <!-- Input Email -->
+
+    <!-- <input type="email" placeholder="Preencha o seu email" size="20" title="Preencha o seu email" required>
+<br> -->
+    <!-- Input Password -->
+
+    <!-- <input type="password" placeholder="Preencha a sua senha"  size="24" title="Senha precisa ser em hexadecimal" pattern="[0-9a-fA-F]{4,8}" required >
+<br> -->
+    <!-- Input hidden -->
+
+    <!-- <input type="hidden" value="Eu estou escondido"> -->
+
+    <!-- Input color -->
+
+    <!-- <input type="color">
+<br> -->
+    <!-- Input date,month, week , time -->
+
+    <!-- <input type="date">
+<br> -->
+
+    <!-- Input Checkbox -->
+<!-- <label for="area">Qual área de interesse?</label>
+
+<div name="area"> 
+        <input type="checkbox" value="Front-End" name="interesse" id="frontEnd">
+        <label for="frontEnd">Front-End</label>      
+    <input type="checkbox" value="Back-End" name="interesse" id="backEnd">
+        <label for="backEnd">Back-End</label>  
+    <input type="checkbox" value="Design UI/UX" name="interesse" id="designUiUx"> 
+        <label for="designUiUx">Design UI/UX</label>
+</div>
+
+<br>
+<br> -->
+
+<!-- Input Radio -->
+
+<!-- <h3>Deseja receber notificações da be.academy?</h3>
+
+<label for="yes">Sim</label>
+<input type="radio" name="notification" id="yes" value="yes">
+
+<label for="no">Não</label>
+<input type="radio" name="notification" id="no" value="no">
+ -->
+
+ <!-- Select
+    Elemento de formulário, cria uma lista de opções (DropDown)
+ -->
+
+ <label for="teacher">Professores</label>
+ <select name="select-teacher" id="teacher">
+    <option value="">Selecione um Professor</option>
+    <option value="Luan Santos">Luan Santos</option>
+    <option value="Moacir Garcia">Moacir Garcia</option>
+    <option value="Jenifer Vieira">Jenifer Vieira</option>
+    <option value="Regis Eduardo">Regis Eduardo</option>
+ </select>
+<br>
+<br>
+<br>
+
+<!-- 
+    Input Search
+        * Elemento usado para pesquisar conteúdo.
+        * Pode receber atributos e comportamentos.
+ -->
+
+<input type="search" placeholder="Busque o usuário pelo ID" pattern="[0-9]{0,3}" title="Busque pelo ID de até 3 Dígitos" required>
+
+<br>
+<br>
+<br>
+
+<!-- 
+    Input file
+        * Upload de arquivos
+ -->
+
+ <input type="file" accept="image/*" multiple>
+
+
+<br>
+    <!-- Botão para enviar o form. -->
+
+    <button type="submit">Enviar</button>
+    
+</fieldset>
+
+ </form>
